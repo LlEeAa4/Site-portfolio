@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+
+    <head>
+    <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+    <meta name="portefolio" content="Portefolio Grapisme / Webdesign / wordpress - HTML / Recherche d'un contrat d'alternance - Etudiante en Innovation Numérique"/>
+        
+    <title> Léa Dufraigne - Etudiante en Innovation Numérique Editoriale- Apprentie assistante d'édition </title>
+        
+    <link rel= "stylesheet" href="style.css"/>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+   
+   
+<body>
+    <main>
+       <header id="top">
+            <nav id="menu-principal">
+                <ul> 
+                    <li> 
+                        <a class="js-scrollTo" href="#portfolio">Portfolio</a>
+                    </li>
+                                  
+                    <li>
+                        <a class="js-scrollTo" href="#contact">Contact</a>
+                            </li>
+                </ul>
+            </nav>
+           
+            <h1> Léa Dufraigne </h1>
+           
+            <h2> Etudiante en Innovation Numérique Editoriale <br> Apprentie assistante d'édition </h2>
+        </header>   
+    </main>
+    
+    
+ <section id="portfolio">
+        <article class="projet">
+            <a href="https://www.projet-voltaire.fr/presentation/" target="_blank" title="Le projet Voltaire ?">
+            <img src="img/sans-faute-Certificat-Voltaire.jpg" alt="Certification orthographique">
+            </a>
+            <h3> Passage de la certification orthographique Voltaire </h3>
+        </article>
+        
+        <article class="projet">
+            <a href="#" target="_blank" title="Projet d'étude sur le télétravail en édition">
+            <img src="img/Projet-teletravail.jpg" alt="édition et télétravail">
+            </a>
+            <h3>Projet Activité et outils de travail à distance dans le domaine de l'édition</h3>
+        </article>
+     
+        <article class="projet">
+            <a href="img/Affiches-lecturia.pdf" target="_blank" title="Activités Lecturia">
+            <img src="img/Logo-lectuira.jpg" alt="Activités Lecturia">
+            </a>
+            <h3> Activités de mon club de lecture </h3>
+        </article>
+     
+        <article class="projet">
+            <a href="img/Mes-montages-photos.pdf" target="_blank" title="Mes réalisations">
+            <img src="img/Photomontage.jpg" alt="Affiche lecturia">
+            </a>
+            <h3> Mes montages photos </h3>
+                
+        </article>
+</section>  
+    
+<section id="contact">
+    <h4>Travaillons ensemble !</h4>
+        
+    <h5>Léa Dufraigne</h5>
+        
+    <div>
+        <a class="bouton" class="js-scrollTo" href="mailto:l%65%61.d&#117;f&#114;%61%69&#103;%6e%65%30&#52;&#51;7&#64;&#103;m%61il%2ec%6f&#109;">lea.dufraigne0437&#64;gmail.com</a>
+    </div>
+        
+    <div>
+        <a class="bouton-cv" href="DUFRAIGN-Lea-CV.pdf" target="_blank"> Voir mon cv </a>
+    </div>
+        
+        <a href="#top" class="js-scrollTo back-to-top">Retour en haut &#x2B89;</a>
+</section>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
+</script>
+    
+    </body>
+</html>

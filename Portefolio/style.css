@@ -1,0 +1,142 @@
+@charset : "utf-8";
+
+html, body {
+    margin : 0;
+    
+}
+*{
+    box-sizing:border-box; /* * cible tous les blocs, ici le contenu ne dépassera la largeur du bloc. */
+}
+body{
+    font-family: Trebuchet MS, sans-serif;
+    font-size:16px;
+}
+
+h1, h2{
+    margin-left: 50px;
+    font-family: Open Sans condensed, sans-serif;    
+}
+h1{
+    font-size:50px;
+    margin-top:50px;
+   
+}
+
+h2{
+    font-size:20px;
+    font-size:50px;
+}
+
+h3{
+    
+}
+
+#top{
+    height:100vh; /*100% de la hauteur de l'écran*/
+    background : url(img/Image-porte-folio-.jpg) no-repeat center;
+    background-size:cover; /*l'image s'ajuste pour couvrir tout le bloc*/
+    padding:30px 15px; /*haut + bas - droite + gauche*/
+}
+
+
+#menu-principal ul {
+    margin : 0;
+    padding-left : 0; /*marge intérieur gauche*/
+    display:flex; /* le conteneur ul est une flexbox*/
+    flex-wrap:wrap;
+    justify-content: center; /* les éléments ul sont centrés*/
+    list-style: none; /*on masque la puce*/
+    
+}
+
+#menu-principal a, menu-principal a:visited {
+    font-family: Open Sans Condensed, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem; /*1,5 fois 16px*/
+    color:black;
+    text-decoration:none; /*Pas de soulignement*/
+    margin: 0 10px;
+    font-weight: 700; /*GRAISSE DE LA LETTRE*/
+    font-size:20px;
+}
+
+#portfolio{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.projet{
+    flex-basis: 25%; /*largeur de chaque élément*/
+    padding:15px;
+    font-size:15px;
+    margin-left:20pxpx;
+    text-align: center;
+    font-family: Open Sans Condensed, sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+#contact{
+    text-align: center;
+    font-family: Open Sans Condensed, sans-serif;
+    font-size:30px;
+    padding:15px 30px;
+    background-image: linear-gradient(#fff, #d5e7ec);
+  }
+
+.bouton{
+    display:inline-block; /*permet de lui attribuer un padding*/
+    background-color:#4682B4;
+    color:white;
+    text-decoration: none;
+    border-radius: 15px;
+    border:2px solid white;
+    font-size:20px;
+    margin-bottom:15px;
+    padding:15px 30px;
+ }
+
+.bouton:hover{
+    background-color: white;
+    color: #4682B4;
+    border: 2px solid #4682B4;
+}
+
+.bouton-cv{
+    background-color:#4682B4;
+    color:white;
+    text-decoration: none;
+    border-radius: 15px;
+    border:2px solid white;
+    font-size:20px;
+    padding:15px 30px;
+    display:inline-block;
+   }
+
+.bouton-cv:hover{
+    background-color: white;
+    color: #4682B4;
+    border: 2px solid #4682B4;
+}
+
+.back-to-top {
+    position: static;
+    text-decoration: none;
+    color:dimgray;
+    font-size: 1.25rem;
+    font-family: Open Sans condensed, sans-serif;
+    margin-top:50px
+}
+
+
+@media (max-width: 768px){
+    .projet{
+        flex-basis:50%;
+    }
+    .comp{
+        flex-basis:100%;
+    }
+}
+
